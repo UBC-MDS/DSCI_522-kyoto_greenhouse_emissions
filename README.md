@@ -37,3 +37,7 @@ Question: Is there a significant difference in greenhouse gas emmission among th
 
 
 4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
+
+A table will demonstrate the significant differences for each country along with the test statistics (F values) obtained from the ANOVA test. 
+We can also retrieve statistics to plot boxplots of the means of greenhouse gas emissions for each country. We can then further show the differences with line plots over the 26 years of emission data. 
+
