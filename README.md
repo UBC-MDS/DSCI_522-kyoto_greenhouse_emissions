@@ -11,18 +11,15 @@ Data is found from the United Nations Statistics Division databases: [link](http
   - [raw](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data/raw)
   - clean
   
-code
-
 scripts
 
 analysis
 
-bin
-
-figures
 
 results/
-  - figs
+  - figures
   - nums
 
 tables
+
+visualization
