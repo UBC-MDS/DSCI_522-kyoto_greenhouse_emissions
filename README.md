@@ -1,7 +1,7 @@
 # kyoto-greenhouse-emissions
 
 Contributers:
-- [Miliban Keyim](https://github.com/mkeyim), [Chao Wang](https://github.com/chaomander2018), Kera Yucel(need github name)  
+- [Miliban Keyim](https://github.com/mkeyim), [Chao Wang](https://github.com/chaomander2018), [Kera Yucel](https://github.com/K3ra-y)  
 
 This repository contains a regression case for greenhouse gas emissions from countries in the Kyoto Protocol, and the prediction of emissions in the next 5 years.  
 
