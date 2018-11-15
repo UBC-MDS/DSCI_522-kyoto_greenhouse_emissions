@@ -1,11 +1,13 @@
-# kyoto-greenhouse-emissions
+# DSCI_522_Greenhouse_Emissions_Comparisions
 
 Contributers:
 - [Miliban Keyim](https://github.com/mkeyim), [Chao Wang](https://github.com/chaomander2018), [Kera Yucel](https://github.com/K3ra-y)  
 
-This repository contains a regression case for greenhouse gas emissions from countries in the Kyoto Protocol, and the prediction of emissions in the next 5 years.  
+## Overview of contents
 
-Data is found from the United Nations Statistics Division databases: [link](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2)
+This repository contains a exploratory analysis regarding the greenhouse gas emissions from 10 countries over 26 years. We hope to find if there is significant differences in any of the 10 countries.
+
+Data is found from the United Nations Statistics Division databases: [Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2)
 
 [data](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data)/
   - [raw](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data/raw)
