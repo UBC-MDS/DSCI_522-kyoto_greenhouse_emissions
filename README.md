@@ -33,7 +33,7 @@ visualization
 
 2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
 
-> Question: Is there a significant difference in greenhouse gas emmission among the countries between 1990 and 2015? Type of the question is Exploratory.
+> Question: Is there a significant difference in greenhouse gas emmission among the countries between 1990 and 2015? Type of the question is Inferential.
 
 3. Make a plan of how you will analyze the data (report an estimate and confidence intervals? hypothesis test? classification with a decision tree?). Choose something you know how to do (report an estimate and confidence intervals, a two-group hypothesis), or will learn how to do in the first week of block 3 (ANOVA, classification with a decision tree).
 
