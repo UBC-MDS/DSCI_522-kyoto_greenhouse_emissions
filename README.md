@@ -6,7 +6,7 @@ Contributers:
 This repository contains a regression case for greenhouse gas emissions from countries in the Kyoto Protocol, and the prediction of emissions in the next 5 years.  
 
 data/
-  - raw: http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2
+  - [raw](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data)
   - clean
   
 code
