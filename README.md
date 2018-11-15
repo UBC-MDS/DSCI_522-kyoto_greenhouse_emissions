@@ -1,4 +1,4 @@
-# kyoto-greenhouse-emissions
+# DSCI_522_greenhouse_emissions_comparisons
 
 Contributers:
 - [Miliban Keyim](https://github.com/mkeyim), [Chao Wang](https://github.com/chaomander2018), [Kera Yucel](https://github.com/K3ra-y)  
