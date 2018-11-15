@@ -23,3 +23,15 @@ results/
 tables
 
 visualization
+
+
+1. Choose a public data set from the web that you are interested in to carry out a small data analysis. You may also use any data set we have previously worked with in MDS. Prove to us that you can load the data set into R or Python (this could be demonstrating by writing a script that downloads the data and saves a snippet of it, for example).
+
+2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
+
+Question: Is there a significant difference in greenhouse gas emmission among the countries between 1990 and 2015? Type of the question is Exploratory.
+
+3. Make a plan of how you will analyze the data (report an estimate and confidence intervals? hypothesis test? classification with a decision tree?). Choose something you know how to do (report an estimate and confidence intervals, a two-group hypothesis), or will learn how to do in the first week of block 3 (ANOVA, classification with a decision tree).
+
+
+4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
