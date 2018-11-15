@@ -5,8 +5,8 @@ Contributers:
 
 This repository contains a regression case for greenhouse gas emissions from countries in the Kyoto Protocol, and the prediction of emissions in the next 5 years.  
 
-data/
-  - [raw](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data)
+[data](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data)/
+  - [raw](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data/raw)
   - clean
   
 code
