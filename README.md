@@ -72,6 +72,9 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
 ## Dependencies
 
 library(readr)
+
 library(ggplot2)
+
 library(tidyverse)
+
 library(dplyr)
