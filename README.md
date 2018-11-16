@@ -17,7 +17,7 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
 [data](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data)
   - [raw](https://github.com/mkeyim/kyoto-greenhouse-emissions/tree/master/data/raw)
   - clean
-  
+
 [scripts](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/scripts)
 
 analysis
@@ -39,7 +39,7 @@ visualization
 
 2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
 
-> Question: Is there a significant difference in Greenhouse Gas Emmission among the countries between 1990 and 2015? The type of the question is Inferential.
+> Question: Is there a significant difference in Greenhouse Gas Emission among the countries between 1990 and 2015? The type of the question is Inferential.
 
 3. Make a plan of how you will analyze the data (report an estimate and confidence intervals? hypothesis test? classification with a decision tree?). Choose something you know how to do (report an estimate and confidence intervals, a two-group hypothesis), or will learn how to do in the first week of block 3 (ANOVA, classification with a decision tree).
 
@@ -54,7 +54,7 @@ visualization
 
 > Select the appropriate test statistic. F-value.
 
-> Set up decision rule. 
+> Set up decision rule.
 
 > Compute test statistics.
 
@@ -62,7 +62,7 @@ visualization
 
 4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
 
-> A table will demonstrate the significant differences for each country along with the test statistics (F values) obtained from the ANOVA test. 
+> A table will demonstrate the significant differences for each country along with the test statistics (F values) obtained from the ANOVA test.
 
 > We can also retrieve statistics to plot boxplots of the means of greenhouse gas emissions for each country. We can then further show the differences with line plots over the 26 years of emission data. 
 
