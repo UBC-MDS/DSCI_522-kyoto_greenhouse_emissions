@@ -65,9 +65,9 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
 
 4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
 
-> A table will demonstrate the significant differences for each country along with the test statistics (F-value, p-value and mean) obtained from the ANOVA test.
+- A table will demonstrate the significant differences for each country along with the test statistics (F-value, p-value and mean) obtained from the ANOVA test.
 
-> We will also retrieve statistics to plot boxplots of the means of greenhouse gas emissions for each country. We can then further show the differences with line plots over the 26 years of emission data. 
+- We will also retrieve statistics to plot boxplots of the means of greenhouse gas emissions for each country. We can then further show the differences with line plots over the 26 years of emission data. 
 
 ## Dependencies
 
