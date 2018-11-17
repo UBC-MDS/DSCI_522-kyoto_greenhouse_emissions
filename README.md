@@ -28,6 +28,8 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
 
   - [analyze_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/analyze_data.R)
 
+[image](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/image)
+
 [results](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/results)
   
 
