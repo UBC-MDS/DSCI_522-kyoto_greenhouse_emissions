@@ -12,6 +12,7 @@ str(data_GH)
 
 data_GH <- data_GH %>%
   rename('Country' = 'Country or Area')
-
+data_GH$Country <- as.factor(data_GH$Country)
+str(data_GH)
 write_csv(data_GH, "data/clean_data_GH.csv")
 
