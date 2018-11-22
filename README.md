@@ -1,4 +1,4 @@
-# DSCI_522_Greenhouse_Emissions_Comparisions
+# DSCI_522_greenhouse_emissions_comparisons
 
 Contributers:
 - [Miliban Keyim](https://github.com/mkeyim)
@@ -22,11 +22,11 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
   - [raw](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data/raw)
 
 [scripts](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/scripts)
-  - [load_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/load_data.R)
+  - [load_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/1_load_data.R)
   
-  - [data_exploration_and_clean_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/data_exploration_and_clean_data.R)
+  - [data_exploration_and_clean_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/2_data_exploration.R)
 
-  - [analyze_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/analyze_data.R)
+  - [analyze_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/3_analyze_data.R)
 
 [image](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/image)
 
