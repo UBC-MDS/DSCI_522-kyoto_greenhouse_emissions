@@ -3,6 +3,7 @@ library(readr)
 library(ggplot2)
 library(tidyverse)
 library(dplyr)
+library(forcats)
 
 # Data analysis on greenhouse gas emission from 10 countries among 26 years
 
@@ -41,4 +42,31 @@ sum(clean_data_GH$Value == 0) #NONE
 
 # 6. Are categorical covariates balanced?
 # Not relevant for the data set
+
+#7. Eploratory visualization that is useful to help the reader/consumer understand that dataset. 
+
+output_viz <- clean_data_GH %>% 
+          ggplot(aes(Year, Value, group = Country, colour = fct_reorder(Country, desc(Value)))) +
+          geom_line()+
+          ylab("Emission Value (kt)") +
+          scale_y_continuous(labels = scales::comma) +
+          labs(title = "Greenhouse Gas Emission over 25 years", 
+               subtitle = "Including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent",
+               caption = "Source: Greenhouse Gas Inventory Data | UN Framework Convention on Climate Change") +
+          theme(axis.text.x = element_text(angle = 65, hjust = 1, size = 8),
+                legend.position = "right", 
+                legend.title = element_blank(),
+                legend.text=element_text(size=8),
+                plot.caption=element_text(size=6),
+                plot.subtitle = element_text(size = 8),
+                axis.line = element_line(colour = "black"),
+                panel.background = element_blank(),
+                panel.border = element_rect(colour = "black", fill = NA),
+                legend.key=element_blank()
+                )
+
+
+ggsave("image/GHG_exploreView.png", plot = output_viz)
+
+
 
