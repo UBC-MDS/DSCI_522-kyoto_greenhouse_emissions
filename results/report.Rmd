@@ -3,14 +3,14 @@ title: "Greenhouse Gas Emission Comparisons with ANOVA"
 output: pdf_document
 ---
 
-#the statistical summaries, and/or the figures in a little report. 
-
 This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries from 1990 to 2015. The main analysis aims to find the significant difference of Greenhouse Gas Emissions across the countries, using ANOVA to find differences in means of emmisions. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") used is pulled from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
 
-The 25 years of data shows emissions for each of the 9 nations has remained fairly stagment, with a majority of nations having very similar emission numbers. This can be seen in the this plot:
+The 25 years of data shows emissions for each of the 9 nations has remained fairly stagment, with a majority of nations having very similar emission numbers. This can be seen in Figure 1 in the Appendix. 
 
-![](fig/GHG_exploreView.png){width=400px}
 
+
+#the statistical summaries, and/or the figures in a little report. 
+ 
  
 #presents the findings/results, and 
 
@@ -21,3 +21,15 @@ The 25 years of data shows emissions for each of the 9 nations has remained fair
 #a statement of future directions (what would you do next if you had more time to work on this). 
 
 #The report is expected to be 1-2 written pages (excluding figures, tables and references). You are #expected to have a reference section and cite 2-3 external sources (data source can be one of #these citations).
+
+
+## Appendix
+
+#### Figure 1:
+![](fig/GHG_exploreView.png){width=400px}
+
+
+## References
+
+"Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent" Greenhouse Gas Inventory Data, United Nations Framework Convention on Climate Change, website: http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2
+
