@@ -15,7 +15,9 @@ clean_data_GH <- read_csv("data/clean_data_GH.csv",
 ggplot(clean_data_GH, aes(Year, Value, colour = Country )) +
   geom_point()
 # European Union has high values compared to other countries 
-# EU is discarded from the analysis 
+# EU will be discarded from the analysis 
+clean_data_GH <- clean_data_GH %>% 
+  filter(Country != "European Union")
 
 # Are there missing values?
 sum(is.na(clean_data_GH$Value))
@@ -42,3 +44,5 @@ sum(clean_data_GH$Value == 0) #NONE
 # 6. Are categorical covariates balanced?
 # Not relevant for the data set
 
+
+write_csv(data_GH, "data/clean_data_GH.csv")
