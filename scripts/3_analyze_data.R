@@ -2,7 +2,7 @@
 library(readr)
 
 
-clean_data_GH <- read_csv("data/clean_data_GH.csv")
+clean_data_GH <- read_csv("../data/clean_data_GH.csv")
 str(clean_data_GH)
 
 # ANOVA to detect if there is significant difference among the countries
@@ -13,3 +13,4 @@ summary(aov_GH)
 
 # Which countries are difference compared to each other?
 TukeyHSD(aov_GH) #THIS PART NEEDS TO BE DISCUSSED.
+
