@@ -7,7 +7,7 @@ str(clean_data_GH)
 
 # ANOVA to detect if there is significant difference among the countries
 
-aov_GH <- aov(Value ~ Country, data = clean_data_GH)
+aov_GH <-aov(Value ~ Country, data = clean_data_GH)
 summary(aov_GH)
 # there is significant difference in greenhouse emission among the countries
 
