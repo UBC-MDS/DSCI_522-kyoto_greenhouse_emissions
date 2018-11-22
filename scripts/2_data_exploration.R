@@ -4,11 +4,6 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 
-# Rename column name `Country or Area`
-
-data_GH <- data_GH %>%
-  rename(Country = `Country or Area`)
-
 
 #### Data exploration ####
 
