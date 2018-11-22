@@ -72,7 +72,7 @@ output_viz <- clean_data_GH %>%
                 )
 
 
-ggsave("image/GHG_exploreView.png", plot = output_viz)
+ggsave("results/figure/GHG_exploreView.png", plot = output_viz)
 
 
 
