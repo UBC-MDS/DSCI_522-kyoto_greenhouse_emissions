@@ -4,22 +4,28 @@ library(ggplot2)
 library(tidyverse)
 library(dplyr)
 
+# Data analysis on greenhouse gas emission from 10 countries among 26 years
+
+clean_data_GH <- read_csv("data/clean_data_GH.csv", 
+                    col_types = cols(Year = col_character()))
 
 #### Data exploration ####
 
 # 1. Outliers
-ggplot(data_GH, aes(Year, Value, colour = Country )) +
+ggplot(clean_data_GH, aes(Year, Value, colour = Country )) +
   geom_point()
-# No outliers
+# European Union has high values compared to other countries 
+# EU is discarded from the analysis 
+
 # Are there missing values?
-sum(is.na(data_GH$Value))
+sum(is.na(clean_data_GH$Value))
 # No missing value
 
 # 2. Collinearity X
 # Not relevant for the dataset
 #C Relationships Y vs X
 boxplot(Value ~ Year, 
-        data = data_GH,
+        data = clean_data_GH,
         xlab = "Year",
         ylab = "GH value")
 # No relationship between Year and GH value
@@ -31,7 +37,7 @@ boxplot(Value ~ Year,
 # Not relevant for the data set
 
 # 5. Zero inflation Y (Are there many 0s in the data set)
-sum(data_GH$Value == 0) #NONE
+sum(clean_data_GH$Value == 0) #NONE
 
 # 6. Are categorical covariates balanced?
 # Not relevant for the data set
