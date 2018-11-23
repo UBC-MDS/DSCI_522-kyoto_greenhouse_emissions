@@ -28,6 +28,8 @@ The 25 years of data shows emissions for each of the 9 nations has remained fair
 #### Figure 1:
 ![](fig/GHG_exploreView.png){width=400px}
 
+#### Figure 2:
+![](fig/GH_boxplot.png)
 
 ## References
 
