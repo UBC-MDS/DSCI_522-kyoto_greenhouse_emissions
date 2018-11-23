@@ -14,11 +14,17 @@ The 25 years of data shows emissions for each of the 9 nations has remained fair
  
 #presents the findings/results, and 
 
-#interprets the findings/results in context of the question. 
+- our p-value is 2.0413E-280, which is really small, as our p-value is smaller than the alpha(0.05), we reject the null hypothesis. 
 
+#interprets the findings/results in context of the question. 
+- The boxplot shows that the distribution of the Green House emission of the 9 nations are significantly different than each other. 
 
 #Some critique of the analysis is also expected (limitations, assumptions, etc) and 
 #a statement of future directions (what would you do next if you had more time to work on this). 
+
+- We removed EU data as we are unable to define countries and their emission value in the EU category
+- If we know the compositions of the EU countries included in this data source, we would be able to split the EU emission into countries and include EU countries into our analysis
+- In future analysis we should try our best to keep all the origina data in our analysis. We could do some sort of transformation to make sense of all data.
 
 #The report is expected to be 1-2 written pages (excluding figures, tables and references). You are #expected to have a reference section and cite 2-3 external sources (data source can be one of #these citations).
 
