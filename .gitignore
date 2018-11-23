@@ -1,4 +1,6 @@
 # git ignore file
 
+
+.DS_Store
 *.DS_Store
 *.Rhistory
