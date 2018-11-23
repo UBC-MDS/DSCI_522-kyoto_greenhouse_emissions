@@ -37,6 +37,9 @@ The 25 years of data shows emissions for each of the 9 nations has remained fair
 #### Figure 2:
 ![](fig/GH_boxplot.png)
 
+#### Figure 3:
+![](fig/GH_est_plot.png)
+
 ## References
 
 "Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent" Greenhouse Gas Inventory Data, United Nations Framework Convention on Climate Change, website: http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2
