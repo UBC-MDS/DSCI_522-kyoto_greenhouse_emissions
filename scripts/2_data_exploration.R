@@ -16,11 +16,16 @@ library(tidyverse)
 library(dplyr)
 
 
+# read in command line arguments
+args <- commandArgs(trailingOnly = TRUE)
+input <- args[1]
+output <- args[2]
+
 #define main function
 main <- function(){
   
   # Data analysis on greenhouse gas emission from 10 countries among 26 years
-  clean_data_GH <- read_csv("data/clean_data_GH.csv", 
+  clean_data_GH <- read_csv(input, 
                     col_types = cols(Year = col_character()))
 
   #### Data exploration ####
@@ -59,7 +64,7 @@ main <- function(){
   # Not relevant for the data set
 
 
-  write_csv(clean_data_GH, "data/clean_data_GH.csv")
+  write_csv(clean_data_GH, input)
 
 
   #7. Eploratory visualization that is useful to help the reader/consumer understand that dataset. 
@@ -85,7 +90,7 @@ main <- function(){
                   )
 
 
-  ggsave("results/figure/GHG_exploreView.png", plot = output_viz)
+  ggsave(output, plot = output_viz)
 
 }
 

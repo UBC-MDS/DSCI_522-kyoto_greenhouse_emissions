@@ -12,9 +12,14 @@
 library(readr)
 library(broom)
 
+# read in command line arguments
+args <- commandArgs(trailingOnly = TRUE)
+input <- args[1]
+output <- args[2]
+
 # define main function
 main <- function(){
-  clean_data_GH <- read_csv("data/clean_data_GH.csv")
+  clean_data_GH <- read_csv(input)
   str(clean_data_GH)
 
   # ANOVA to detect if there is significant difference among the countries
@@ -26,7 +31,7 @@ main <- function(){
   tidy_aov <- broom::tidy(aov_GH)
   
   #write ANOVA summary to .csv in results
-  write_csv(tidy_aov, "results/summarized_data.csv")
+  write_csv(tidy_aov, output)
 
 
 

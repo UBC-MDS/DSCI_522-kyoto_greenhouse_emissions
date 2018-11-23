@@ -12,12 +12,17 @@
 library(readr)
 library(tidyverse)
 
+# read in command line arguments
+args <- commandArgs(trailingOnly = TRUE)
+input <- args[1]
+output <- args[2]
+
 # define main function
 main <- function(){
 
 
   # Data analysis on greenhouse gas emission from 10 countries among 26 years
-  data_GH <- read_csv("data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv", 
+  data_GH <- read_csv(input, 
                           col_types = cols(Year = col_character()))
   str(data_GH)
 
@@ -27,7 +32,7 @@ main <- function(){
     rename('Country' = 'Country or Area')
   data_GH$Country <- as.factor(data_GH$Country)
   str(data_GH)
-  write_csv(data_GH, "data/clean_data_GH.csv")
+  write_csv(data_GH, output)
 
 }
 
