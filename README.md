@@ -82,3 +82,10 @@ library(ggplot2)
 library(tidyverse)
 
 library(dplyr)
+
+library(forcats)
+
+library(broom)
+
+library(scales)
+

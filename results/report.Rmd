@@ -4,19 +4,6 @@ output: pdf_document
 author: Miliban Keyim, Chao Wang and Kera Yucel
 ---
 
-```{r global_options, include=FALSE}
-knitr::opts_chunk$set(fig.pos = 'H')
-
-ctrFmt = function(x){
-  if(out_type == 'latex' || out_type == 'beamer')
-    paste0("\\begin{center}\n", x, "\n\\end{center}")
-  else if(out_type == 'html')
-    paste0("<center>\n", x, "\n</center>")
-  else
-    x
-}
-```
-
 This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The main analysis aims to find these is a differences of greenhouse gas emissions (kt) across the countries in the past 25 years. ANOVA was performed to determine whether there is any significant difference in greenhouse gas emission among 10 countries, when observed, multiple comperisons on counties were performed. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
 
 The 25 years of data shows emissions for each of the nine nations have displayed different patterns, with a majority of nations having very similar emission volumes (Figure 1) The aim of the projest is to find out whether there is a significant difference in greenhouse gas emissions among nations. Greenhouse gas emission and countries were analyzed by one-way ANOVA, significance level was set at P < 0.05 and pairwise comparisons between the multiple nation's were evaluated.
@@ -30,7 +17,10 @@ Our hypothesis are as follows:
 
 #the statistical summaries, and/or the figures in a little report. 
 
-Kera comment: inbed ANOVA table here.
+| term | df | sumsq | meansq | statistic | p.value |
+|-----------|-----|-------------|-------------|-------------|-----------|
+| Country | 9 | 5.73925E+14 | 6.37695E+13 | 4536.75 | <.001 |
+| Residuals | 250 |3.51405E+12 | 1.406E+10 | NA | NA |
 
 One-way ANOVA indicates that the greenhouse emission of the nine nations are significantly different than each other (p-value < 0.05). Additionally pairwise comparisons were conducted to determine which countries are significantly different from each other (Figure 2? boxplot with the letters) 
 
@@ -48,12 +38,11 @@ Latvia demontrated the least greenhouse gas emmision of all the countries that w
 
 
 ## Appendix
-\fontsize{8}{22}
-\fontseries{b}
 
+  
 ![](fig/GHG_exploreView.png){width=400px}
-Figure 1: Explainotary data analysis indicates that the Europian Union had the highest greengouse gas emmision and this category was discarded from the analysis to avoid skewness. 
-</center>
+##### Figure 1: Explainotary data analysis indicates that the Europian Union had the highest greengouse gas emmision and this category was discarded from the analysis to avoid skewness.
+
 
 ![](fig/GH_boxplot.png)
 ##### Figure 2: Greenhouse gas emmision (kt) of nine differnet countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, p < 0.05).
@@ -63,46 +52,26 @@ Figure 1: Explainotary data analysis indicates that the Europian Union had the h
 
 "Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent" Greenhouse Gas Inventory Data, United Nations Framework Convention on Climate Change, website: http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2
 
+David Robinson, Alex Hayes, Matthieu Gomez, Boris Demeshev, Dieter Menne, Benjamin Nutter, Luke Johnston, Ben Bolker, Francois Briatte, Jeffrey Arnold, Jonah Gabry, Luciano Selzer, Gavin Simpson, Jens Preussner, Jay Hesselberth, Hadley Wickham, Matthew Lincoln, Alessandro Gasparini, Lukasz Komsta, Frederick Novometsky, Wilson Freitas, Michelle Evans, Jason Cory Brunson, Simon Jackson, Ben Whalley, Michael Kuehn, Jorge Cimentada, Erle Holgersen, Karl Dunkle Werner (2018).broom: Summarizes key information about statistical objects in tidy tibbles. This makes it easy to report results, create plots and consistently work with large numbers of models at once. R package version 0.5.0  https://cran.r-project.org/web/packages/broom/index.html
 
-> citation("tidyverse")
+Hadley Wickham (2017). tidyverse: Easily Install and Load the 'Tidyverse'. R package version 1.2.1. https://CRAN.R-project.org/package=tidyverse
 
-  Hadley Wickham (2017). tidyverse: Easily Install and Load the 'Tidyverse'. R package version 1.2.1.
-  https://CRAN.R-project.org/package=tidyverse
-  
-> citation("forcats")
+Hadley Wickham (2018). forcats: Helpers for reordering factor levels (including moving specified levels to front, ordering by first appearance, reversing, and randomly shuffling), and tools for modifying factor levels (including collapsing rare levels into other, 'anonymising', and manually 'recoding'). R package version 0.3.0 https://cran.r-project.org/packages=forcats
 
-  Hadley Wickham (2018). forcats: Helpers for reordering factor levels (including moving specified levels to front, ordering by first appearance, reversing, and randomly shuffling), and tools for modifying factor levels (including collapsing rare levels into other, 'anonymising', and manually 'recoding'). R package version 0.3.0
-  https://cran.r-project.org/packages=forcats
-
-> citation("readr")
-
-  Hadley Wickham, Jim Hester, Romain Francois, Jukka Jylänki, Mikkel Jørgensen (2017). readr: The goal of 'readr' is to provide a fast and friendly way to read rectangular data (like 'csv', 'tsv', and 'fwf'). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. R package version 1.1.1
+Hadley Wickham, Jim Hester, Romain Francois, Jukka Jylänki, Mikkel Jørgensen (2017). readr: The goal of 'readr' is to provide a fast and friendly way to read rectangular data (like 'csv', 'tsv', and 'fwf'). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. R package version 1.1.1
   https://cran.r-project.org/web/packages/readr/
 
-> citation("dplyr")
-
-  Hadley Wickham, Romain François, Lionel Henry, Kirill Müller(2018).dplyr: A fast, consistent tool for working with data frame like objects, both in memory and out of memory. R package version 0.7.6
+Hadley Wickham, Romain François, Lionel Henry, Kirill Müller(2018).dplyr: A fast, consistent tool for working with data frame like objects, both in memory and out of memory. R package version 0.7.6
   https://cran.r-project.org/web/packages/dplyr/
 
-> citation("ggplot2")
-
-  Hadley Wickham, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo (2018). ggplot2: A system for 'declaratively' creating graphics, based on "The Grammar of Graphics". You provide the data, tell 'ggplot2' how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.R package version 3.0.0
+Hadley Wickham, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo (2018). ggplot2: A system for 'declaratively' creating graphics, based on "The Grammar of Graphics". You provide the data, tell 'ggplot2' how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.R package version 3.0.0
   https://cran.r-project.org/web/packages/ggplot2/
 
-> citation("broom")
 
-  David Robinson, Alex Hayes, Matthieu Gomez, Boris Demeshev, Dieter Menne, Benjamin Nutter, Luke Johnston, Ben Bolker, Francois Briatte, Jeffrey Arnold, Jonah Gabry, Luciano Selzer, Gavin Simpson, Jens Preussner, Jay Hesselberth, Hadley Wickham, Matthew Lincoln, Alessandro Gasparini, Lukasz Komsta, Frederick Novometsky, Wilson Freitas, Michelle Evans, Jason Cory Brunson, Simon Jackson, Ben Whalley, Michael Kuehn, Jorge Cimentada, Erle Holgersen, Karl Dunkle Werner (2018).broom: Summarizes key information about statistical objects in tidy tibbles. This makes it easy to report results, create plots and consistently work with large numbers of models at once. R package version 0.5.0
-  https://cran.r-project.org/web/packages/broom/index.html
-   	
-> citation("scales")
-
-  Hadley Wickham (2018) scales: Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends.R package version 1.0.0
+Hadley Wickham (2018) scales: Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends.R package version 1.0.0
   https://cran.r-project.org/web/packages/scales/
 
 Janzen, H.H., 1999. Health of our air: Toward sustainable agriculture in Canada (No. MIC-99-04464/XAB; SSC-A-53-1981/1998E). Agriculture and Agri-Food Canada, Research Branch, Ottawa, Ontario (Canada).
 
 Roos, I., Soosaar, S., Volkova, A. and Streimikene, D., 2012. Greenhouse gas emission reduction perspectives in the Baltic States in frames of EU energy and climate policy. Renewable and Sustainable Energy Reviews, 16(4), pp.2133-2146.
-
-
-
 
