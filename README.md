@@ -9,6 +9,7 @@ Contributers:
 
 This repository contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries from 1990 to 2015. This analysis aims to find the significant difference of Greenhouse Gas Emissions across the countries between 1990 and 2015.
 
+You can use the `run_all.sh` to run the five scripts and the final report to view the analysis report in pdf
 
 ## Data Collection & Cleaning
 
@@ -37,43 +38,27 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
   - [report.pdf](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/results/report.pdf)
   
 
-## Proposal
 
-1. Choose a public data set from the web that you are interested in to carry out a small data analysis. You may also use any data set we have previously worked with in MDS. Prove to us that you can load the data set into R or Python (this could be demonstrating by writing a script that downloads the data and saves a snippet of it, for example).
+## Usage
+The usages of the scripts are:
+```
+Rscript scripts/1_load_data.R data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv data/clean_data_GH.csv
 
-[R script](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/scripts)
+Rscript scripts/2_data_exploration.R data/clean_data_GH.csv results/fig/GHG_exploreView.png
 
+Rscript scripts/3_analyze_data.R data/clean_data_GH.csv results/summarized_data.csv
 
-2. With that data set, identify a question you would like to ask from it that could be answered by some simple analysis and visualization (more on this below). State what kind of question it is (it should be one of the 6 types discussed in lecture 1).
+Rscript scripts/4_plot_results.R data/clean_data_GH.csv results/fig/GH_boxplot.png
 
-- Question: Is there a significant difference in Greenhouse Gas Emission among the countries between 1990 and 2015? The type of the question is Inferential.
+Rscript scripts/5_plot_estimates.R data/clean_data_GH.csv results/fig/GH_est_plot.png
 
-3. Make a plan of how you will analyze the data (report an estimate and confidence intervals? hypothesis test? classification with a decision tree?). Choose something you know how to do (report an estimate and confidence intervals, a two-group hypothesis), or will learn how to do in the first week of block 3 (ANOVA, classification with a decision tree).
+Rscript -e "rmarkdown::render('results/report.Rmd')"
+```
 
-- Data exploration and cleanup
-
-  * We will be performing a set of [data exploration](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210X.2009.00001.x) to identify initial problems in the dataset
-
-- Calculate means and variances for the 10 countries.
-
-- Set up hypotheses and determine level of significance.  
- 
- * H0: The expected mean greenhouse gas emmision of all countries are equal.
- * H1: The expected mean greenhouse gas emmision of all countries are not equal.
-
-- *ANOVA* will be used to decide whether there is a significant difference in the Greenhouse Gas Emission across the 10 countries.
-
-- If ANOVA indicates that mean of some countries are different (*p*<0.05), we will Use Tukey multiple pairwise-comparison to define which countries are significantly different than the other one.
-
-- Prepare a table to show differences between counties and report F-value, p-value and means.
-
-- Conclusion.
-
-4. Suggest how you might summarize the data to show this as a table or a number, as well as how you might show this as a visualization.
-
-- A table will demonstrate the significant differences for each country along with the test statistics (F-value, p-value and mean) obtained from the ANOVA test.
-
-- We will also retrieve statistics to plot boxplots of the means of greenhouse gas emissions for each country. We can then further show the differences with line plots over the 26 years of emission data. 
+Or, you can use our run_all.sh in the root repository:
+```
+bash run_all.sh
+```
 
 ## Dependencies
 
@@ -91,3 +76,6 @@ library(broom)
 
 library(scales)
 
+## Release version
+ - Proposal [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0)
+ - Milestone 1 [V2.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v2.0)
