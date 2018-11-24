@@ -1,11 +1,12 @@
 ---
 title: "Greenhouse Gas Emission Comparisons with ANOVA"
 output: pdf_document
+author: Miliban Keyim, Chao Wang and Kera Yucel
 ---
 
-This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries from 1990 to 2015. The main analysis aims to find the significant difference of Greenhouse Gas Emissions across the countries, using ANOVA to find differences in means of emmisions. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") used is pulled from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
+This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The main analysis aims to find these is a differences of greenhouse gas emissions (kt) across the countries in the past 25 years. ANOVA was performed to determine whether there is any significant difference in greenhouse gas emission among 10 countries, when observed, multiple comperisons on counties were performed. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
 
-The 25 years of data shows emissions for each of the 9 nations has remained fairly stagment, with a majority of nations having very similar emission numbers. This can be seen in Figure 1 in the Appendix. What we aim to find out is to determine whether there is a significant differencce between the means of greenhouse emissions for each nation. This will be done by doing a one-way ANOVA test on the means, by comparing the multiple nation's emission values.
+The 25 years of data shows emissions for each of the nine nations have displayed different patterns, with a majority of nations having very similar emission volumes (Figure 1) The aim of the projest is to find out whether there is a significant difference in greenhouse gas emissions among nations. Greenhouse gas emission and countries were analyzed by one-way ANOVA, significance level was set at P < 0.05 and pairwise comparisons between the multiple nation's were evaluated.
 
 Our hypothesis are as follows:
 
@@ -15,37 +16,46 @@ Our hypothesis are as follows:
 
 
 #the statistical summaries, and/or the figures in a little report. 
- 
+
+Kera comment: inbed ANOVA table here.
  
 #presents the findings/results, and 
 
-- our p-value is 2.0413E-280, which is really small, as our p-value is smaller than the alpha(0.05), we reject the null hypothesis. 
+- One-way ANOVA indicates that the greenhouse emission of the nine nations are significantly different than each other (p-value < 0.05). Additionally pairwise comparisons were conducted to determine which countries are significantly different from each other (Figure 2? boxplot with the letters) 
 
 #interprets the findings/results in context of the question. 
-- The boxplot shows that the distribution of the Green House emission of the 9 nations are significantly different than each other. 
+- Latvia demontrated the least greenhouse gas emmision of all the countries that were included to the analysis, the goverment of Latvia established policies regarding renewable energy in which was the mair energy consumption by 29.6 % of all energy consumptions in 2009 (Roos et al., 2012). Canada and Japan displayed significantly high greenhouse gas emmission in the past 25 years compared to other counties. Jarzen et al. (1998) discussed that 10% of Canada's greenhouse emmision is originated farming-related activities such as farming operations which requires fossil-energy. WHY JAPAN IS HIGH, discuss
 
 #Some critique of the analysis is also expected (limitations, assumptions, etc) and 
 #a statement of future directions (what would you do next if you had more time to work on this). 
 
-- We removed EU data as we are unable to define countries and their emission value in the EU category
-- If we know the compositions of the EU countries included in this data source, we would be able to split the EU emission into countries and include EU countries into our analysis
-- In future analysis we should try our best to keep all the origina data in our analysis. We could do some sort of transformation to make sense of all data.
+- European Union data was removed as countries are not identified in the resource and additionally their greenhouse gas emission value was higher that the rest of the countries (Figure 3).
+- If we know the compositions of the EU countries included in this data source, we would be able to split the EU emission into countries and include EU countries into our analysis.
+- In future analysis we should try our best to keep all the original data in our analysis. We could do some sort of transformation to make sense of all data.
+- Future analysis can shed light on greenhouse gas emmision over the years and which countries are statistacally improving reduction in greenhouse gas emmision using time-series analysis. 
+
 
 #The report is expected to be 1-2 written pages (excluding figures, tables and references). You are #expected to have a reference section and cite 2-3 external sources (data source can be one of #these citations).
 
 
 ## Appendix
 
-#### Figure 1:
+  
 ![](fig/GHG_exploreView.png){width=400px}
-
-#### Figure 2:
+Figure 1: Explanotary data analysis indicates that the Europian Union had the highest greengouse gas emmision and this category was discarded from the analysis to avoid skewness.
 ![](fig/GH_boxplot.png)
+ Figure 2: Greenhouse gas emmision (kt) of nine differnet countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, p < 0.05).
 
-#### Figure 3:
+#### Figure 3: KERA: this figure doesn't add much to the story, it can be discarded.
 ![](fig/GH_est_plot.png)
 
 ## References
 
 "Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent" Greenhouse Gas Inventory Data, United Nations Framework Convention on Climate Change, website: http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2
+
+Janzen, H.H., 1999. Health of our air: Toward sustainable agriculture in Canada (No. MIC-99-04464/XAB; SSC-A-53-1981/1998E). Agriculture and Agri-Food Canada, Research Branch, Ottawa, Ontario (Canada).
+
+Roos, I., Soosaar, S., Volkova, A. and Streimikene, D., 2012. Greenhouse gas emission reduction perspectives in the Baltic States in frames of EU energy and climate policy. Renewable and Sustainable Energy Reviews, 16(4), pp.2133-2146.
+
+
 
