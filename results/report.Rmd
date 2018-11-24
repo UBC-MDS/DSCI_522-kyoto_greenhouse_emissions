@@ -18,42 +18,38 @@ Our hypothesis are as follows:
 #the statistical summaries, and/or the figures in a little report. 
 
 Kera comment: inbed ANOVA table here.
- 
-#presents the findings/results, and 
 
-- One-way ANOVA indicates that the greenhouse emission of the nine nations are significantly different than each other (p-value < 0.05). Additionally pairwise comparisons were conducted to determine which countries are significantly different from each other (Figure 2? boxplot with the letters) 
+One-way ANOVA indicates that the greenhouse emission of the nine nations are significantly different than each other (p-value < 0.05). Additionally pairwise comparisons were conducted to determine which countries are significantly different from each other (Figure 2? boxplot with the letters) 
 
-#interprets the findings/results in context of the question. 
-- Latvia demontrated the least greenhouse gas emmision of all the countries that were included to the analysis, the goverment of Latvia established policies regarding renewable energy in which was the mair energy consumption by 29.6 % of all energy consumptions in 2009 (Roos et al., 2012). Canada and Japan displayed significantly high greenhouse gas emmission in the past 25 years compared to other counties. Jarzen et al. (1998) discussed that 10% of Canada's greenhouse emmision is originated farming-related activities such as farming operations which requires fossil-energy. WHY JAPAN IS HIGH, discuss
+#interprets the findings/results in context of the question.   
+Latvia demontrated the least greenhouse gas emmision of all the countries that were included to the analysis, the goverment of Latvia established policies regarding renewable energy in which was the mair energy consumption by 29.6 % of all energy consumptions in 2009 (Roos et al., 2012). Canada and Japan displayed significantly high greenhouse gas emmission in the past 25 years compared to other counties. Jarzen et al. (1998) discussed that 10% of Canada's greenhouse emmision is originated farming-related activities such as farming operations which requires fossil-energy. WHY JAPAN IS HIGH, discuss
 
-#Some critique of the analysis is also expected (limitations, assumptions, etc) and 
-#a statement of future directions (what would you do next if you had more time to work on this). 
+### Critics, limitations, and assumptions on analysis: 
 
-- European Union data was removed as countries are not identified in the resource and additionally their greenhouse gas emission value was higher that the rest of the countries (Figure 3).
-- If we know the compositions of the EU countries included in this data source, we would be able to split the EU emission into countries and include EU countries into our analysis.
-- In future analysis we should try our best to keep all the original data in our analysis. We could do some sort of transformation to make sense of all data.
-- Future analysis can shed light on greenhouse gas emmision over the years and which countries are statistacally improving reduction in greenhouse gas emmision using time-series analysis. 
+1. European Union data was removed as countries are not identified in the resource and additionally their greenhouse gas emission value was higher that the rest of the countries (Figure 3).
+2. If we know the compositions of the EU countries included in this data source, we would be able to split the EU emission into countries and include EU countries into our analysis.
+3. In future analysis we should try our best to keep all the original data in our analysis. We could do some sort of transformation to make sense of all data.
+4. Future analysis can shed light on greenhouse gas emmision over the years and which countries are statistacally improving reduction in greenhouse gas emmision using time-series analysis. 
 
 
-#The report is expected to be 1-2 written pages (excluding figures, tables and references). You are #expected to have a reference section and cite 2-3 external sources (data source can be one of #these citations).
 
 
 ## Appendix
 
   
 ![](fig/GHG_exploreView.png){width=400px}
-Figure 1: Explanotary data analysis indicates that the Europian Union had the highest greengouse gas emmision and this category was discarded from the analysis to avoid skewness.
-![](fig/GH_boxplot.png)
- Figure 2: Greenhouse gas emmision (kt) of nine differnet countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, p < 0.05).
+##### Figure 1: Explainotary data analysis indicates that the Europian Union had the highest greengouse gas emmision and this category was discarded from the analysis to avoid skewness.
 
-#### Figure 3: KERA: this figure doesn't add much to the story, it can be discarded.
-![](fig/GH_est_plot.png)
+
+![](fig/GH_boxplot.png)
+##### Figure 2: Greenhouse gas emmision (kt) of nine differnet countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, p < 0.05).
+
 
 ## References
 
 "Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent" Greenhouse Gas Inventory Data, United Nations Framework Convention on Climate Change, website: http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2
 
-<<<<<<< HEAD
+
 > citation("tidyverse")
 
   Hadley Wickham (2017). tidyverse: Easily Install and Load the 'Tidyverse'. R package version 1.2.1.
@@ -88,11 +84,11 @@ Figure 1: Explanotary data analysis indicates that the Europian Union had the hi
 
   Hadley Wickham (2018) scales: Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends.R package version 1.0.0
   https://cran.r-project.org/web/packages/scales/
-=======
+
 Janzen, H.H., 1999. Health of our air: Toward sustainable agriculture in Canada (No. MIC-99-04464/XAB; SSC-A-53-1981/1998E). Agriculture and Agri-Food Canada, Research Branch, Ottawa, Ontario (Canada).
 
 Roos, I., Soosaar, S., Volkova, A. and Streimikene, D., 2012. Greenhouse gas emission reduction perspectives in the Baltic States in frames of EU energy and climate policy. Renewable and Sustainable Energy Reviews, 16(4), pp.2133-2146.
->>>>>>> upstream/master
+
 
 
 
