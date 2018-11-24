@@ -101,5 +101,5 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
   
 
 ## Release version
- - Proposal    [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0)
- - Milestone 1 [V2.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v2.0)
+ - [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0) Proposal
+ - [V2.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v2.0) Milestone 1 
