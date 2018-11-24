@@ -6,7 +6,7 @@
 # an exploratory visualization that is useful to help 
 # the readers understand the green house emission dataset. 
 #
-# Usage: Rscript 2_data_exploration.R
+# Usage: Rscript scripts/2_data_exploration.R data/data_GH.csv data/clean_data_GH.csv results/fig/GHG_explore.png
 
 
 # import libraries/packages
@@ -20,6 +20,7 @@ library(dplyr)
 args <- commandArgs(trailingOnly = TRUE)
 input <- args[1]
 output <- args[2]
+output_image <- args[3]
 
 #define main function
 main <- function(){
@@ -90,7 +91,7 @@ main <- function(){
                   )
 
 
-  ggsave(output, plot = output_viz)
+  ggsave(output_image, plot = output_viz)
 
 }
 
