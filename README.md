@@ -9,42 +9,14 @@ Contributers:
 
 This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countriesbetween 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt)across these countries in the past 25 years. An ANOVA was performed to determine whether there is anysignificant difference in GHG Emissions when observed, multiple comparisons on counties were performed.The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Conventionon Climate Change.
 
-The final report consist
+The final report consists:
 - Hypothesis
 - Statistical Summary of ANOVA
 - Interpretation of Findings
-- Critics, limitations, and assumptions on analysis
+- Critics, Limitations, and Assumptions on Analysis
 - References
 
 
-## Data Collection & Cleaning
-
-Data is found from the United Nations Statistics Division databases: [Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2)
-
-## Repository Structure
-
-[doc](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/doc)
-
-  - [report.Rmd](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/doc/report.Rmd)
-
-[data](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data)
-  - [raw](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data/raw)
-
-[scripts](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/scripts)
-  - [load_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/1_load_data.R)
-  
-  - [data_exploration_and_clean_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/2_data_exploration.R)
-
-  - [analyze_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/3_analyze_data.R)
-  
-  - [plot_results.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/4_plot_results.R)
-  
-  - [plot_estimate.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/5_plot_estimates.R)
-
-[results](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/results)
-
-  - [report.pdf](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/results/report.pdf)
-  
 
 ## Procedure
 
@@ -83,14 +55,50 @@ The report will be rendered into a PDF document.
 ## Dependencies
 
 R version 3.5.1
+
 library(readr)
+
 library(ggplot2)
+
 library(tidyverse)
+
 library(dplyr)
+
 library(forcats)
+
 library(broom)
+
 library(scales)
 
+
+## Data Collection & Cleaning
+
+Data is found from the United Nations Statistics Division databases: [Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2)
+
+## Repository Structure
+
+[doc](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/doc)
+
+  - [report.Rmd](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/doc/report.Rmd)
+
+[data](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data)
+  - [raw](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data/raw)
+
+[scripts](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/scripts)
+  - [load_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/1_load_data.R)
+  
+  - [data_exploration_and_clean_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/2_data_exploration.R)
+
+  - [analyze_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/3_analyze_data.R)
+  
+  - [plot_results.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/4_plot_results.R)
+  
+  - [plot_estimate.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/5_plot_estimates.R)
+
+[results](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/results)
+
+  - [report.pdf](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/results/report.pdf)
+  
 
 ## Release version
  - Proposal    [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0)
