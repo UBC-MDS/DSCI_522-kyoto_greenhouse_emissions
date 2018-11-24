@@ -33,6 +33,8 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
   - [plot_estimate.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/5_plot_estimates.R)
 
 [results](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/results)
+
+  - [report.pdf](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/results/report.pdf)
   
 
 ## Proposal
@@ -88,3 +90,4 @@ library(forcats)
 library(broom)
 
 library(scales)
+
