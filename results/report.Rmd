@@ -5,7 +5,12 @@ output: pdf_document
 
 This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries from 1990 to 2015. The main analysis aims to find the significant difference of Greenhouse Gas Emissions across the countries, using ANOVA to find differences in means of emmisions. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") used is pulled from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
 
-The 25 years of data shows emissions for each of the 9 nations has remained fairly stagment, with a majority of nations having very similar emission numbers. This can be seen in Figure 1 in the Appendix. 
+The 25 years of data shows emissions for each of the 9 nations has remained fairly stagment, with a majority of nations having very similar emission numbers. This can be seen in Figure 1 in the Appendix. What we aim to find out is to determine whether there is a significant differencce between the means of greenhouse emissions for each nation. This will be done by doing a one-way ANOVA test on the means, by comparing the multiple nation's emission values.
+
+Our hypothesis are as follows:
+
+\textbf{$H_{0}$}: There is no difference between the amount of Greenhouse Gas Emissions between the 10 nations from 1990 to 2015.  
+\textbf{$H_{A}$}: There is a difference between the amount of Greenhouse Gas Emissions between the 10 nations from 1990 to 2015.
 
 
 
