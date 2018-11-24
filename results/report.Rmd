@@ -49,3 +49,40 @@ Our hypothesis are as follows:
 
 "Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent" Greenhouse Gas Inventory Data, United Nations Framework Convention on Climate Change, website: http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2
 
+> citation("tidyverse")
+
+  Hadley Wickham (2017). tidyverse: Easily Install and Load the 'Tidyverse'. R package version 1.2.1.
+  https://CRAN.R-project.org/package=tidyverse
+  
+> citation("forcats")
+
+  Hadley Wickham (2018). forcats: Helpers for reordering factor levels (including moving specified levels to front, ordering by first appearance, reversing, and randomly shuffling), and tools for modifying factor levels (including collapsing rare levels into other, 'anonymising', and manually 'recoding'). R package version 0.3.0
+  https://cran.r-project.org/packages=forcats
+
+> citation("readr")
+
+  Hadley Wickham, Jim Hester, Romain Francois, Jukka Jylänki, Mikkel Jørgensen (2017). readr: The goal of 'readr' is to provide a fast and friendly way to read rectangular data (like 'csv', 'tsv', and 'fwf'). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. R package version 1.1.1
+  https://cran.r-project.org/web/packages/readr/
+
+> citation("dplyr")
+
+  Hadley Wickham, Romain François, Lionel Henry, Kirill Müller(2018).dplyr: A fast, consistent tool for working with data frame like objects, both in memory and out of memory. R package version 0.7.6
+  https://cran.r-project.org/web/packages/dplyr/
+
+> citation("ggplot2")
+
+  Hadley Wickham, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo (2018). ggplot2: A system for 'declaratively' creating graphics, based on "The Grammar of Graphics". You provide the data, tell 'ggplot2' how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.R package version 3.0.0
+  https://cran.r-project.org/web/packages/ggplot2/
+
+> citation("broom")
+
+  David Robinson, Alex Hayes, Matthieu Gomez, Boris Demeshev, Dieter Menne, Benjamin Nutter, Luke Johnston, Ben Bolker, Francois Briatte, Jeffrey Arnold, Jonah Gabry, Luciano Selzer, Gavin Simpson, Jens Preussner, Jay Hesselberth, Hadley Wickham, Matthew Lincoln, Alessandro Gasparini, Lukasz Komsta, Frederick Novometsky, Wilson Freitas, Michelle Evans, Jason Cory Brunson, Simon Jackson, Ben Whalley, Michael Kuehn, Jorge Cimentada, Erle Holgersen, Karl Dunkle Werner (2018).broom: Summarizes key information about statistical objects in tidy tibbles. This makes it easy to report results, create plots and consistently work with large numbers of models at once. R package version 0.5.0
+  https://cran.r-project.org/web/packages/broom/index.html
+   	
+> citation("scales")
+
+  Hadley Wickham (2018) scales: Graphical scales map data to aesthetics, and provide methods for automatically determining breaks and labels for axes and legends.R package version 1.0.0
+  https://cran.r-project.org/web/packages/scales/
+
+
+
