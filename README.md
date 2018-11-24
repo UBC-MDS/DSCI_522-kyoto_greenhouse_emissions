@@ -7,13 +7,21 @@ Contributers:
 
 ## Overview of contents
 
-This repository contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries from 1990 to 2015. This analysis aims to find the significant difference of Greenhouse Gas Emissions across the countries between 1990 and 2015.
+This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countriesbetween 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt)across these countries in the past 25 years. An ANOVA was performed to determine whether there is anysignificant difference in GHG Emissions when observed, multiple comparisons on counties were performed.The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Conventionon Climate Change.
 
-You can use the `run_all.sh` to run the five scripts and the final report to view the analysis report in pdf
+The final report consist
+- Hypothesis
+- Statistical Summary of ANOVA
+- Interpretation of Findings
+- Critics, limitations, and assumptions on analysis
+- References
+
 
 ## Data Collection & Cleaning
 
 Data is found from the United Nations Statistics Division databases: [Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2)
+
+## Repository Structure
 
 [doc](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/doc)
 
@@ -70,23 +78,20 @@ Or, you can use our run_all.sh in the root repository:
 ```
 bash run_all.sh
 ```
+The report will be rendered into a PDF document.
 
 ## Dependencies
 
+R version 3.5.1
 library(readr)
-
 library(ggplot2)
-
 library(tidyverse)
-
 library(dplyr)
-
 library(forcats)
-
 library(broom)
-
 library(scales)
 
+
 ## Release version
- - Proposal [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0)
+ - Proposal    [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0)
  - Milestone 1 [V2.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v2.0)
