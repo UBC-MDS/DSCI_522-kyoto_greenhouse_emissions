@@ -4,6 +4,19 @@ output: pdf_document
 author: Miliban Keyim, Chao Wang and Kera Yucel
 ---
 
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H')
+
+ctrFmt = function(x){
+  if(out_type == 'latex' || out_type == 'beamer')
+    paste0("\\begin{center}\n", x, "\n\\end{center}")
+  else if(out_type == 'html')
+    paste0("<center>\n", x, "\n</center>")
+  else
+    x
+}
+```
+
 This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The main analysis aims to find these is a differences of greenhouse gas emissions (kt) across the countries in the past 25 years. ANOVA was performed to determine whether there is any significant difference in greenhouse gas emission among 10 countries, when observed, multiple comperisons on counties were performed. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
 
 The 25 years of data shows emissions for each of the nine nations have displayed different patterns, with a majority of nations having very similar emission volumes (Figure 1) The aim of the projest is to find out whether there is a significant difference in greenhouse gas emissions among nations. Greenhouse gas emission and countries were analyzed by one-way ANOVA, significance level was set at P < 0.05 and pairwise comparisons between the multiple nation's were evaluated.
@@ -35,11 +48,12 @@ Latvia demontrated the least greenhouse gas emmision of all the countries that w
 
 
 ## Appendix
+\fontsize{8}{22}
+\fontseries{b}
 
-  
 ![](fig/GHG_exploreView.png){width=400px}
-##### Figure 1: Explainotary data analysis indicates that the Europian Union had the highest greengouse gas emmision and this category was discarded from the analysis to avoid skewness.
-
+Figure 1: Explainotary data analysis indicates that the Europian Union had the highest greengouse gas emmision and this category was discarded from the analysis to avoid skewness. 
+</center>
 
 ![](fig/GH_boxplot.png)
 ##### Figure 2: Greenhouse gas emmision (kt) of nine differnet countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, p < 0.05).
