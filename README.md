@@ -23,7 +23,7 @@ We performed a set of [data exploration](https://besjournals.onlinelibrary.wiley
 
 - Check outliers
 
-_ Plot a line graph to see the general trend of the 10 countries' Green House Gas emssion within the time frame.
+- Plot a line graph to see the general trend of the 10 countries' Green House Gas emssion within the time frame.
 
 - Set up hypotheses and determine level of significance.  
  
