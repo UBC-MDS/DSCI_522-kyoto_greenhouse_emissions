@@ -27,8 +27,8 @@ We performed a set of [data exploration](https://besjournals.onlinelibrary.wiley
 
 - Set up hypotheses and determine level of significance.  
  
- * H0: The expected mean greenhouse gas emmision of all countries are equal.
- * H1: The expected mean greenhouse gas emmision of all countries are not equal.
+  * H0: The expected mean greenhouse gas emmision of all countries are equal.
+  * H1: The expected mean greenhouse gas emmision of all countries are not equal.
 
 - *ANOVA* is used to decide whether there is a significant difference in the Greenhouse Gas Emission across the 10 countries.
 
