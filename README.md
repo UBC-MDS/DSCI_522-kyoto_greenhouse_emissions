@@ -1,4 +1,4 @@
-# DSCI_522_greenhouse_emissions_comparisons
+# Greenhouse Emission Comparisons
 
 Contributers:
 - [Miliban Keyim](https://github.com/mkeyim)
