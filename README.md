@@ -7,7 +7,7 @@ Contributers:
 
 ## Overview of contents
 
-This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countriesbetween 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt)across these countries in the past 25 years. An ANOVA was performed to determine whether there is anysignificant difference in GHG Emissions when observed, multiple comparisons on counties were performed.The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Conventionon Climate Change.
+This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt)across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG Emissions when observed, multiple comparisons on counties were performed. The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention Climate Change.
 
 The final report consists:
 - Hypothesis
@@ -18,7 +18,7 @@ The final report consists:
 
 ## Data
 
-### Dataset 
+### Dataset
 - This analysis is performed on [Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2) provided by the United Nations Statistics Division databases.
 
 
@@ -43,7 +43,7 @@ We performed a set of [data exploration](https://besjournals.onlinelibrary.wiley
 - Plot a line graph to see the general trend of the 10 countries' Green House Gas emssion within the time frame.
 
 - Set up hypotheses and determine level of significance.  
- 
+
   * H0: The expected mean greenhouse gas emmision of all countries are equal.
   * H1: The expected mean greenhouse gas emmision of all countries are not equal.
 
@@ -118,29 +118,28 @@ library(multcomp)
 
 ## Repository Structure
 
-[doc](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/doc)
+data
+  - raw/
 
-  - [report.Rmd](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/doc/report.Rmd)
+results
+  - fig/
+  - report.pdf
+  - report.Rmd
 
-[data](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data)
-  - [raw](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/data/raw)
+scripts
+  - 1_load_data.R
 
-[scripts](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/scripts)
-  - [load_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/1_load_data.R)
-  
-  - [data_exploration_and_clean_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/2_data_exploration.R)
+  - 2_data_exploration.R
 
-  - [analyze_data.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/3_analyze_data.R)
-  
-  - [plot_results.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/4_plot_results.R)
-  
-  - [plot_estimate.R](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/scripts/5_plot_estimates.R)
+  - 3_analyze_data.R
 
-[results](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/tree/master/results)
+  - 4_plot_results.R
 
-  - [report.pdf](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/blob/master/results/report.pdf)
-  
+  - 5_plot_estimates.R
+
+
+
 
 ## Release version
  - [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0) Proposal
- - [V2.1](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/V2.1) Milestone 1 
+ - [V2.1](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/V2.1) Milestone 1
