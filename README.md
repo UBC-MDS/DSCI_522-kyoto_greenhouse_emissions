@@ -16,6 +16,23 @@ The final report consists:
 - Critics, Limitations, and Assumptions on Analysis
 - References
 
+## Data
+
+### Dataset 
+- This analysis is performed on [Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2) provided by the United Nations Statistics Division databases.
+
+
+### Data Attributes
+- Country or Area: characters
+- Year: numeric
+- Value: numeric
+
+
+### Data snippet
+The dataset can be loaded using the Rscript. Below is a screenshot of the dataset loaded in R.
+![raw_data_snippet](data/raw_data_snippet.png)
+
+
 ## The Analysis
 We performed a set of [data exploration](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210X.2009.00001.x) to identify initial problems in the dataset.
 
@@ -91,10 +108,13 @@ library(broom)
 
 library(scales)
 
+library(emmeans)
 
-## Data Collection & Cleaning
+library(multcompView)
 
-Data is found from the United Nations Statistics Division databases: [Greenhouse Gas (GHGs) Emissions, including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent](http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2)
+library(multcomp)
+
+
 
 ## Repository Structure
 
@@ -123,4 +143,4 @@ Data is found from the United Nations Statistics Division databases: [Greenhouse
 
 ## Release version
  - [V1.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v1.0) Proposal
- - [V2.0](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v2.0) Milestone 1 
+ - [V2.1](https://github.com/UBC-MDS/DSCI_522_greenhouse_emissions_comparisons/releases/tag/v2.1) Milestone 1 
