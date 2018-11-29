@@ -92,51 +92,27 @@ The report will be rendered into a PDF document.
 
 ## Dependencies
 
-R version 3.5.1
+RStudio version 3.5.1
 
-library(readr)
+[tidyverse](https://github.com/tidyverse)
 
-library(ggplot2)
+[readr](https://github.com/tidyverse/readr)
 
-library(tidyverse)
+[ggplot2](https://github.com/tidyverse/ggplot2)
 
-library(dplyr)
+[dplyr](https://github.com/tidyverse/dpylr)
 
-library(forcats)
+[forcats](https://github.com/tidyverse/forcats)
 
-library(broom)
+[broom](https://github.com/tidymodels/broom)
 
-library(scales)
+[scales](https://github.com/r-lib/scales)
 
-library(emmeans)
+[emmeans](https://github.com/rvlenth/emmeans)
 
-library(multcompView)
+[multcompView](https://cran.r-project.org/web/packages/multcompView/index.html)
 
-library(multcomp)
-
-
-
-## Repository Structure
-
-data
-  - raw/
-
-results
-  - fig/
-  - report.pdf
-  - report.Rmd
-
-scripts
-  - 1_load_data.R
-
-  - 2_data_exploration.R
-
-  - 3_analyze_data.R
-
-  - 4_plot_results.R
-
-  - 5_plot_estimates.R
-
+[multcomp](https://cran.r-project.org/web/packages/multcomp/index.html)
 
 
 
