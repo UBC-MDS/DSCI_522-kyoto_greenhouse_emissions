@@ -20,7 +20,7 @@ $H_{A}$: There is a difference between the amount of Greenhouse Gas Emissions be
 25 years of collected data shows emissions for each of the nine nations, these figures seem to display different patterns, with a group of nations having very similar emission volumes (Figure 1). The aim of this analysis is to find out whether there is a significant difference in greenhouse gas emissions among all the nations. Greenhouse gas emission and countries were analyzed by a one-way ANOVA, the significance level was set at P < 0.05, and pairwise comparisons between the multiple nation's were evaluated.  
 
 
-![](fig/GHG_exploreView.png){width=350px}  
+![](fig/GHG_explore.png){width=350px}  
 
 Figure 1: Initial Exploratory analysis of the data shows there looks to be a difference in emissions for some nations, but not all.   
 
