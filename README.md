@@ -62,7 +62,7 @@ make all
 make clean
 ```
 
-The report will be rendered into a PDF document.
+The report will be rendered into a markdown file.
 
 ## Dependencies
 
