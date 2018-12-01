@@ -28,32 +28,20 @@ The final report consists:
 - Value: numeric
 
 
-### Data snippet
-The dataset can be loaded using the Rscript. Below is a screenshot of the dataset loaded in R.
-![raw_data_snippet](data/raw_data_snippet.png)
-
 
 ## The Analysis
 We performed a set of [data exploration](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210X.2009.00001.x) to identify initial problems in the dataset.
 
-- Calculate means and variances for the 10 countries.
-
-- Check outliers
-
-- Plot a line graph to see the general trend of the 10 countries' Green House Gas emssion within the time frame.
+- In our initial exploratory analysis, we calculate estimates and variances for the 10 countries. We checked outliers and notice that European Union group is the outliers as its value is the aggregated value from multiple countries. We plotted a line graph to see the general trend of the 10 countries' Green House Gas emssion within the time frame.
 
 - Set up hypotheses and determine level of significance.  
 
   * H0: The expected mean greenhouse gas emmision of all countries are equal.
   * H1: The expected mean greenhouse gas emmision of all countries are not equal.
 
-- *ANOVA* is used to decide whether there is a significant difference in the Greenhouse Gas Emission across the 10 countries.
+- *ANOVA* is used to decide whether there is a significant difference in the Greenhouse Gas Emission across the 10 countries. We used Tukey multiple pairwise-comparison to define which countries are significantly different than the other one.
 
-- We used Tukey multiple pairwise-comparison to define which countries are significantly different than the other one.
-
-- Prepare a table and a boxplot to show differences between counties and report F-value, p-value and means.
-
-- Conclusion.
+- We prepare a table and a boxplot to show differences between counties and report F-value, p-value and means. Conclusion can be found in report.
 
 
 ## Procedure
