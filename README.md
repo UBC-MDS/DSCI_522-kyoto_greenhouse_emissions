@@ -9,7 +9,7 @@ Contributers:
 
 ### Question: Is there an overall significant difference among the counties in their greenhouse gas emission?
 
-This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention Climate Change. The analysis aims to find if these are differences of greenhouse gas emissions (kt) across these countries. An ANOVA was performed to determine whether there is any significant difference in GHG emissions when observed, multiple comparisons on counties were performed.
+This report contains an exploratory analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention Climate Change. The analysis aims to find if these are differences of greenhouse gas emissions (kt) across these countries. An ANOVA was performed to determine whether there is any significant difference in GHG emissions when observed, multiple comparisons on counties were performed.
 
 Countries included into the analysis: Latvia, Switzerland, Portugal, Finland, Denmark, Czech Republic, Netherlands, Canada, Japan.
 
@@ -27,7 +27,7 @@ The final report consists:
 
 
 ### Data Attributes
-- Country or Area: characters
+- Country or Area: characters (set as `factor` for the analysis)
 - Year: numeric
 - Value: numeric
 
