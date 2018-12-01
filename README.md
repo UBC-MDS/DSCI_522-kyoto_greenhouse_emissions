@@ -50,32 +50,14 @@ This project contains five major steps including data cleaning, exploratory data
 ![analysis process chart](data/procedure.png)
 
 ## Usage
-The usage of the scripts are:
+The usage of the make file are:
 ```
-# Load data
-Rscript scripts/1_load_data.R data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv data/clean_data_GH.csv
-
-# EDA
-Rscript scripts/2_data_exploration.R data/clean_data_GH.csv results/fig/GHG_exploreView.png
-
-# Clean data
-Rscript scripts/3_analyze_data.R data/clean_data_GH.csv results/summarized_data.csv
-
-# Create the boxplot
-Rscript scripts/4_plot_results.R data/clean_data_GH.csv results/fig/GH_boxplot.png
-
-# Create the estimate the ci
-Rscript scripts/5_plot_estimates.R data/clean_data_GH.csv results/fig/GH_est_plot.png
-
-
-# write the report
-Rscript -e "rmarkdown::render('results/report.Rmd')"
+#'make all' simply tells the make tool to build the target 'all' in the makefile.
+make all
+# Delete all necessary files in case you need to run the analysis from scratch.
+make clean
 ```
 
-Or, you can use our run_all.sh in the root repository:
-```
-bash run_all.sh
-```
 The report will be rendered into a PDF document.
 
 ## Dependencies
