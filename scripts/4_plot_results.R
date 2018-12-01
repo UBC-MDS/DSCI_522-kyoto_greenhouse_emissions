@@ -49,10 +49,13 @@ main <- function(){
                   labels = trans_format("log10", math_format(10^.x)))+
     xlab("Country")+
     ylab("Emissions Value(kt)")+
-    ggtitle("Greenhouse Gas (GHGs) Emissions by Countries")+
+    labs(title = "Greenhouse Gas Emission (kt) of nine different countries",
+         subtitle = "Different letters indicate significant differences between the groups (pairwise comparison, p > 0.05)")+
     theme_bw()+
     theme(legend.position="none")+
-    theme(plot.title = element_text(hjust = 0.5))
+    theme(plot.title = element_text(hjust = 0.5,size = 10))+
+    theme(plot.subtitle=element_text(size=8, hjust=0.5))
+    
   
     # save the boxplot as a png in image folder
   ggsave(output_viz, plot =boxplot_result, width = 8, height = 4)
