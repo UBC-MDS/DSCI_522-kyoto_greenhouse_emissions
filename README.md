@@ -7,7 +7,11 @@ Contributers:
 
 ## Overview of contents
 
-This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The analysis aims to find if these are differences of greenhouse gas emissions (kt)across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG issions when observed, multiple comparisons on counties were performed. The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention Climate Change.
+### Question: Is there an overall significant difference among the counties in their greenhouse gas emission?
+
+This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention Climate Change. The analysis aims to find if these are differences of greenhouse gas emissions (kt) across these countries. An ANOVA was performed to determine whether there is any significant difference in GHG emissions when observed, multiple comparisons on counties were performed.
+
+Countries included into the analysis: Latvia, Switzerland, Portugal, Finland, Denmark, Czech Republic, Netherlands, Canada, Japan.
 
 The final report consists:
 - Hypothesis
