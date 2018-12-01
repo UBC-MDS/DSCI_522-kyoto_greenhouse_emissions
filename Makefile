@@ -28,3 +28,4 @@ clean :
 	rm -f results/fig/*.png
 	rm -f results/*.csv
 	rm -f doc/*.md
+	rm -f doc/*.html
