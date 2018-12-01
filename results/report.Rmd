@@ -26,12 +26,6 @@ Figure 1: Initial Exploratory analysis of the data shows there looks to be a dif
 
 
 
-
-
-
-
-
-
 #### Statistical Summary of ANOVA:  
 
 Table 1: ANOVA test output  
