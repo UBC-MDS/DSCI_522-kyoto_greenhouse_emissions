@@ -75,7 +75,7 @@ main <- function(){
             ylab("Emission Value (kt)") +
             scale_y_continuous(labels = scales::comma) +
             labs(title = "Greenhouse Gas Emission over 25 years",
-                 subtitle = "Including Indirect CO2, without LULUCF, in kilotonne CO2 equivalent",
+                 subtitle = "Including Indirect CO2, without LULUCF, in kilotonne (kt) CO2 equivalent",
                  caption = "Source: Greenhouse Gas Inventory Data | UN Framework Convention on Climate Change") +
             theme(axis.text.x = element_text(angle = 65, hjust = 1, size = 8),
                   legend.position = "right",
