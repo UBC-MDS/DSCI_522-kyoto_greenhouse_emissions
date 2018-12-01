@@ -1,4 +1,4 @@
-all : results/report.pdf
+all : doc/report.md
 
 # script 1: 1_load_data.R
 data/data_GH.csv : data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv scripts/1_load_data.R
@@ -20,11 +20,11 @@ results/fig/GH_boxplot.png : data/clean_data_GH.csv results/glht_GH_letters.csv 
 results/fig/GH_est_plot.png : data/clean_data_GH.csv scripts/5_plot_estimates.R
 	Rscript scripts/5_plot_estimates.R data/clean_data_GH.csv results/fig/GH_est_plot.png
 
-results/report.pdf : results/report.Rmd data/clean_data_GH.csv results/fig/GHG_explore.png results/fig/GH_boxplot.png results/fig/GH_est_plot.png
-	Rscript -e "rmarkdown::render('results/report.Rmd')"
+doc/report.md : doc/report.Rmd data/clean_data_GH.csv results/fig/GHG_explore.png results/fig/GH_boxplot.png results/fig/GH_est_plot.png
+	Rscript -e "rmarkdown::render('doc/report.Rmd')"
 
 clean :
 	rm -f data/*.csv
 	rm -f results/fig/*.png
 	rm -f results/*.csv
-	rm -f results/*.pdf
+	rm -f doc/*.md

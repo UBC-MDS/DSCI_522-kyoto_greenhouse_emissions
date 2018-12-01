@@ -23,4 +23,4 @@ Rscript scripts/5_plot_estimates.R data/clean_data_GH.csv results/fig/GH_est_plo
 
 
 # write the report
-Rscript -e "rmarkdown::render('results/report.Rmd')"
+Rscript -e "rmarkdown::render('doc/report.Rmd')"
