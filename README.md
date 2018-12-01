@@ -7,7 +7,7 @@ Contributers:
 
 ## Overview of contents
 
-This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt)across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG Emissions when observed, multiple comparisons on counties were performed. The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention Climate Change.
+This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The analysis aims to find if these are differences of greenhouse gas emissions (kt)across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG issions when observed, multiple comparisons on counties were performed. The data is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention Climate Change.
 
 The final report consists:
 - Hypothesis
@@ -32,12 +32,12 @@ The final report consists:
 ## The Analysis
 We performed a set of [data exploration](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.2041-210X.2009.00001.x) to identify initial problems in the dataset.
 
-- In our initial exploratory analysis, we calculate estimates and variances for the 10 countries. We checked outliers and notice that European Union group is the outliers as its value is the aggregated value from multiple countries. We plotted a line graph to see the general trend of the 10 countries' Green House Gas emssion within the time frame.
+- In our initial exploratory analysis, we calculate estimates and variances for the 10 countries. We checked outliers and notice that European Union group is the outliers as its value is the aggregated value from multiple countries. We plotted a line graph to see the general trend of the 10 countries' Green House Gas emission within the time frame.
 
 - Set up hypotheses and determine level of significance.  
 
-  * H0: The expected mean greenhouse gas emmision of all countries are equal.
-  * H1: The expected mean greenhouse gas emmision of all countries are not equal.
+  * H0: The expected mean greenhouse gas emission of all countries are equal.
+  * H1: The expected mean greenhouse gas emission of all countries are not equal.
 
 - *ANOVA* is used to decide whether there is a significant difference in the Greenhouse Gas Emission across the 10 countries. We used Tukey multiple pairwise-comparison to define which countries are significantly different than the other one.
 
