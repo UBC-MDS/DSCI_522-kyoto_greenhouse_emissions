@@ -66,28 +66,17 @@ The report will be rendered into a PDF document.
 
 ## Dependencies
 
-RStudio version 3.5.1
-
-[tidyverse](https://github.com/tidyverse)
-
-[readr](https://github.com/tidyverse/readr)
-
-[ggplot2](https://github.com/tidyverse/ggplot2)
-
-[dplyr](https://github.com/tidyverse/dpylr)
-
-[forcats](https://github.com/tidyverse/forcats)
-
-[broom](https://github.com/tidymodels/broom)
-
-[scales](https://github.com/r-lib/scales)
-
-[emmeans](https://github.com/rvlenth/emmeans)
-
-[multcompView](https://cran.r-project.org/web/packages/multcompView/index.html)
-
-[multcomp](https://cran.r-project.org/web/packages/multcomp/index.html)
-
+RStudio version 3.5.1  
+[tidyverse](https://github.com/tidyverse)  
+[readr](https://github.com/tidyverse/readr)  
+[ggplot2](https://github.com/tidyverse/ggplot2)  
+[dplyr](https://github.com/tidyverse/dpylr)  
+[forcats](https://github.com/tidyverse/forcats)    
+[broom](https://github.com/tidymodels/broom)  
+[scales](https://github.com/r-lib/scales)  
+[emmeans](https://github.com/rvlenth/emmeans)  
+[multcompView](https://cran.r-project.org/web/packages/multcompView/index.html)  
+[multcomp](https://cran.r-project.org/web/packages/multcomp/index.html)  
 
 
 ## Release version
