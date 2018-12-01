@@ -62,7 +62,7 @@ main <- function(){
                   labels = trans_format("log10", math_format(10^.x)))
   
   
-  print(GH_est_plot)
+
   # save violin plots
   ggsave(output, plot =GH_est_plot, width = 8, height = 4)
 }

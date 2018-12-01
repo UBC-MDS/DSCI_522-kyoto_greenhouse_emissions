@@ -3,23 +3,23 @@ Greenhouse Gas Emission Comparisons with ANOVA
 Miliban Keyim, Chao Wang and Kera Yucel
 2018-11-24
 
-This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries or regions between 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt) across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG Emissions when observed, multiple comparisons on counties were performed. The [data](%22http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2%22) is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change.
+This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries or regions between 1990 and 2015. The analysis aims to find if there is a difference of greenhouse gas emissions (kt) across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG Emissions when observed, multiple comparisons on counties were performed. The [data](%22http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2%22) is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change.
 
-#### Our hypothesis are as follows:
+#### Our hypotheses are as follows:
 
 *H*<sub>0</sub>: There is no difference between the amount of Greenhouse Gas Emissions between the 10 nations from 1990 to 2015.
 
 *H*<sub>*A*</sub>: There is a difference between the amount of Greenhouse Gas Emissions between the 10 nations from 1990 to 2015.
 
-#### Analysis on National Emissions
+#### Analysis of National Emissions
 
-25 years of collected data shows emissions for each of the nine nations, these figures seem to display different patterns, with a group of nations having very similar emission volumes (Figure 1). The aim of this analysis is to find out whether there is a significant difference in greenhouse gas emissions among all the nations. Greenhouse gas emission and countries were analyzed by a one-way ANOVA, the significance level was set at P &lt; 0.05, and pairwise comparisons between the multiple nation's were evaluated.
+25 years of collected data shows emissions for each of the nine nations, these figures seem to display different patterns, with a group of nations having very similar emission volumes (Figure 1). The aim of this analysis is to find out whether there is a significant difference in greenhouse gas emissions among all the nations. Greenhouse gas emission and countries were analyzed by a one-way ANOVA, the significance level was set at P &lt; 0.05, and pairwise comparisons between the multiple nations' were evaluated.
 
 <img src="../results/fig/GHG_explore.png" width="350" />
 
 Figure 1: Initial Exploratory analysis of the data shows there looks to be a difference in emissions for some nations, but not all.
 
-After running the initial exploratory analysis, it shows European Union has significant higher values. Because we are unable to see which countries were aggregated in the European Union category and their individual values, we decided to removed the aggregate group titled "European Union" and kept the individually labeled nations.
+After running the initial exploratory analysis, it shows the European Union has significantly higher values. Because we are unable to see which countries were aggregated in the European Union category and their individual values, we decided to remove the aggregate group titled "European Union" and kept the individually labeled nations.
 
 #### Statistical Summary of ANOVA:
 
@@ -38,14 +38,14 @@ Figure 2: Greenhouse Gas Emission (kt) of nine different countries in the past 2
 
 #### Interpretation of Findings:
 
-Latvia demonstrated the least GHG emissions of all the countries, as reaseach shows their government had established policies regarding renewable energy that resulted in 29.6 % of energy consumptions in 2009 to be renewable (Roos et al., 2012). Canada and Japan displayed significantly higher emission in the past 25 years. It is noted that Canada's greenhouse gas emission is originating from farming-related activities and oil production which requires a large amount of fossil-energy (Jarzen et al., 1998). Japan's high emission is due to the nation's reliance on natural gas and coal to generate electricity (Itawa, 2017).
+Latvia demonstrated the least GHG emissions of all the countries, as research shows their government had established policies regarding renewable energy that resulted in 29.6 % of energy consumptions in 2009 to be renewable (Roos et al., 2012). Canada and Japan displayed significantly higher emission in the past 25 years. It is noted that Canada's greenhouse gas emission is originating from farming-related activities and oil production which requires a large amount of fossil-energy (Jarzen et al., 1998). Japan's high emission is due to the nation's reliance on natural gas and coal to generate electricity (Itawa, 2017).
 
 ### Critics, limitations, and assumptions on analysis:
 
 1.  European Union data was removed as countries are not identified in the data and were aggregated, skewing the data presented.
 2.  If compositions of the EU nations included in this data source, we would be able to split the EU emission into countries or further apply normalization to smooth out differences.
-3.  In future analysis we should try our best to keep all the original data in our analysis. We could do some sort of transformation to scale data to be on same plane.
-4.  Future analysis can shed light on GHG Emission over the years and which countries are statistically improving or not improving on the reduction on GHG Emission using time-series analysis.
+3.  In future analysis, we should try our best to keep all the original data in our analysis. We could do some sort of transformation to scale data to be on the same plane.
+4.  Future analysis can shed light on GHG Emission over the years and which countries are statistically improving or not improving on the reduction of GHG Emission using time-series analysis.
 
 References
 ----------
