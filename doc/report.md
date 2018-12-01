@@ -15,7 +15,7 @@ This report contains an inferential analysis regarding the Greenhouse Gas Emissi
 
 25 years of collected data shows emissions for each of the nine nations, these figures seem to display different patterns, with a group of nations having very similar emission volumes (Figure 1). The aim of this analysis is to find out whether there is a significant difference in greenhouse gas emissions among all the nations. Greenhouse gas emission and countries were analyzed by a one-way ANOVA, the significance level was set at P &lt; 0.05, and pairwise comparisons between the multiple nations' were evaluated.
 
-<img src="../results/fig/GHG_explore.png" width="350" />
+<img src="../results/fig/GHG_explore.png"/>
 
 Figure 1: Initial Exploratory analysis of the data shows there looks to be a difference in emissions for some nations, but not all.
 
@@ -32,7 +32,7 @@ Table 1: ANOVA test output
 
 The one-way ANOVA indicates that the greenhouse emission of the nine nations are significantly different from each other (p-value &lt; 0.05). Additionally, pairwise comparisons were conducted to determine which nations are significantly different from each other.
 
-<img src="../results/fig/GH_boxplot.png" width="400" />
+<img src="../results/fig/GH_boxplot.png" />
 
 Figure 2: Greenhouse Gas Emission (kt) of nine different countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, p &lt; 0.05).
 
