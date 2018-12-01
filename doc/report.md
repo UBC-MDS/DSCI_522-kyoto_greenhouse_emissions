@@ -1,7 +1,7 @@
 Greenhouse Gas Emission Comparisons with ANOVA
 ================
 Miliban Keyim, Chao Wang and Kera Yucel
-2018-12-01
+2018-11-24
 
 This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries or regions between 1990 and 2015. The analysis aims to find if there is a difference of greenhouse gas emissions (kt) across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG Emissions when observed, multiple comparisons on counties were performed. The [data](%22http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2%22) is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change.
 
@@ -13,7 +13,7 @@ This report contains an inferential analysis regarding the Greenhouse Gas Emissi
 
 #### Analysis of National Emissions
 
-25 years of collected data shows emissions for each of the nine nations, these figures seem to display different patterns, with a group of nations having very similar emission volumes (Figure 1). The aim of this analysis is to find out whether there is a significant difference in greenhouse gas emissions among all the nations. Prior to the analysis, we performed exploratory data analysis (Zuur et al., 2010). Greenhouse gas emission and countries were analyzed by a one-way ANOVA, the significance level was set at *p* &lt; 0.05, and pairwise comparisons between the multiple nations' were evaluated.
+25 years of collected data shows emissions for each of the nine nations, these figures seem to display different patterns, with a group of nations having very similar emission volumes (Figure 1). The aim of this analysis is to find out whether there is a significant difference in greenhouse gas emissions among all the nations. Greenhouse gas emission and countries were analyzed by a one-way ANOVA, the significance level was set at P &lt; 0.05, and pairwise comparisons between the multiple nations' were evaluated.
 
 <img src="../results/fig/GHG_explore.png" width="350" />
 
@@ -28,13 +28,13 @@ Table 1: ANOVA test output
 | term      | df  | sumsq       | meansq      | statistic | p.value  |
 |-----------|-----|-------------|-------------|-----------|----------|
 | Country   | 9   | 5.73925E+14 | 6.37695E+13 | 4536.75   | &lt;.001 |
-| Residuals | 250 | 3.51405E+12 | 1.406E+10   |         |        |
+| Residuals | 250 | 3.51405E+12 | 1.406E+10   | NA        | NA       |
 
 The one-way ANOVA indicates that the greenhouse emission of the nine nations are significantly different from each other (p-value &lt; 0.05). Additionally, pairwise comparisons were conducted to determine which nations are significantly different from each other.
 
 <img src="../results/fig/GH_boxplot.png" width="400" />
 
-Figure 2: Greenhouse Gas Emission (kt) of nine different countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, *p* &lt; 0.05).
+Figure 2: Greenhouse Gas Emission (kt) of nine different countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, p &lt; 0.05).
 
 #### Interpretation of Findings:
 
@@ -71,5 +71,3 @@ Itawa, Mari (2017). The Wall Streeet Journal. "Japan CO2 Emissions Worst on Reco
 Janzen, H.H., 1999. Health of our air: Toward sustainable agriculture in Canada (No. MIC-99-04464/XAB; SSC-A-53-1981/1998E). Agriculture and Agri-Food Canada, Research Branch, Ottawa, Ontario (Canada).
 
 Roos, I., Soosaar, S., Volkova, A. and Streimikene, D., 2012. Greenhouse gas emission reduction perspectives in the Baltic States in frames of EU energy and climate policy. Renewable and Sustainable Energy Reviews, 16(4), pp.2133-2146.
-
-Zuur, A.F., Ieno, E.N. and Elphick, C.S., 2010. A protocol for data exploration to avoid common statistical problems. Methods in ecology and evolution, 1(1), pp.3-14.
