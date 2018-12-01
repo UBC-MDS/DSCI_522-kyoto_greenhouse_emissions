@@ -5,7 +5,7 @@ author: Miliban Keyim, Chao Wang and Kera Yucel
 date: 2018-11-24
 ---
 
-This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries between 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt) across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG Emissions when observed, multiple comparisons on counties were performed. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
+This report contains an inferential analysis regarding the Greenhouse Gas Emissions from 10 countries or regions between 1990 and 2015. The analysis aims to find if these is a differences of greenhouse gas emissions (kt) across these countries in the past 25 years. An ANOVA was performed to determine whether there is any significant difference in GHG Emissions when observed, multiple comparisons on counties were performed. The [data]("http://data.un.org/Data.aspx?d=GHG&f=seriesID%3aGH2") is obtained from the Greenhouse Gas Inventory Data of the United Nations Framework Convention on Climate Change. 
   
 
 #### Our hypothesis are as follows:
@@ -23,6 +23,8 @@ $H_{A}$: There is a difference between the amount of Greenhouse Gas Emissions be
 ![](fig/GHG_explore.png){width=350px}  
 
 Figure 1: Initial Exploratory analysis of the data shows there looks to be a difference in emissions for some nations, but not all.   
+
+After running the initial exploratory analysis, it shows European Union has significant higher values. Because we are unable to see which countries were aggregated in the European Union category and their individual values, we decided to removed the aggregate group titled "European Union" and kept the individually labeled nations.
 
 
 
