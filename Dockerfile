@@ -5,8 +5,8 @@
 
 # Usage:
 #   To build the docker image: docker build --DSCI_522_greenhouse_emissions_comparisons:0.1 .
-#   To create the report: docker run --rm -v PASSWORD=test -v /Users/chao/Documents/MDS-B3/DSCI_522_greenhouse_emissions_comparisons: /home/rstudio/DSCI_522_greenhouse_emissions_comparisons DSCI_522_greenhouse_emissions_comparisons make -C '/home/rstudio/DSCI_522_greenhouse_emissions_comparisons' all
-#		To get a clean start: docker run --rm -v PASSWORD=test -v /Users/chao/Documents/MDS-B3/DSCI_522_greenhouse_emissions_comparisons: /home/rstudio/DSCI_522_greenhouse_emissions_comparisons DSCI_522_greenhouse_emissions_comparisons make -C '/home/rstudio/DSCI_522_greenhouse_emissions_comparisons' clean
+#   To create the report: docker run --rm -v PASSWORD=test -v PATH_ON_YOUR_COMPUTER: /home/DSCI_522_greenhouse_emissions_comparisons chaomander2018/MDS-B3/DSCI_522_greenhouse_emissions_comparisons make -C '/home/DSCI_522_greenhouse_emissions_comparisons' all
+#		To get a clean start: docker run --rm -v PASSWORD=test -v PATH_ON_YOUR_COMPUTER: /home/DSCI_522_greenhouse_emissions_comparisons chaomander2018/MDS-B3/DSCI_522_greenhouse_emissions_comparisons make -C '/home/DSCI_522_greenhouse_emissions_comparisons' clean
 
 # use rocker/tidyverse as the base image and
 FROM rocker/tidyverse
