@@ -34,7 +34,7 @@ The one-way ANOVA indicates that the greenhouse emission of the nine nations are
 
 <img src="../results/fig/GH_boxplot.png" width="400" />
 
-Figure 2: Greenhouse Gas Emission (kt) of nine different countries in the past 25 years. Different letters indicate significant differences between the groups (pairwise comparison, *p* &lt; 0.05).
+Figure 2: Greenhouse Gas Emission (kt) of nine different countries in the past 25 years. There is no significant difference between groups with same letters and different letters indicate significant differences between those countries (*p* &lt; 0.05).
 
 #### Interpretation of Findings:
 
@@ -58,9 +58,9 @@ Hadley Wickham (2017). tidyverse: Easily Install and Load the 'Tidyverse'. R pac
 
 Hadley Wickham (2018). forcats: Helpers for reordering factor levels (including moving specified levels to front, ordering by first appearance, reversing, and randomly shuffling), and tools for modifying factor levels (including collapsing rare levels into other, 'anonymising', and manually 'recoding'). R package version 0.3.0 <https://cran.r-project.org/packages=forcats>
 
-Hadley Wickham, Jim Hester, Romain Francois, Jukka Jylänki, Mikkel Jørgensen (2017). readr: The goal of 'readr' is to provide a fast and friendly way to read rectangular data (like 'csv', 'tsv', and 'fwf'). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. R package version 1.1.1 <https://cran.r-project.org/web/packages/readr/>
+Hadley Wickham, Jim Hester, Romain Francois, Jukka JylÃ¤nki, Mikkel JÃ¸rgensen (2017). readr: The goal of 'readr' is to provide a fast and friendly way to read rectangular data (like 'csv', 'tsv', and 'fwf'). It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes. R package version 1.1.1 <https://cran.r-project.org/web/packages/readr/>
 
-Hadley Wickham, Romain François, Lionel Henry, Kirill Müller(2018).dplyr: A fast, consistent tool for working with data frame like objects, both in memory and out of memory. R package version 0.7.6. <https://cran.r-project.org/web/packages/dplyr/>
+Hadley Wickham, Romain FranÃ§ois, Lionel Henry, Kirill MÃ¼ller(2018).dplyr: A fast, consistent tool for working with data frame like objects, both in memory and out of memory. R package version 0.7.6. <https://cran.r-project.org/web/packages/dplyr/>
 
 Hadley Wickham, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo (2018). ggplot2: A system for 'declaratively' creating graphics, based on "The Grammar of Graphics". You provide the data, tell 'ggplot2' how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.R package version 3.0.0. <https://cran.r-project.org/web/packages/ggplot2/>
 
