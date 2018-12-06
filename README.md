@@ -100,30 +100,30 @@ The report will be rendered into a markdown file.
 
 Input and output files are explained for each script below. 
 
-1. 1_load_data.R: This code imports the raw data and turns `Area and Country` variable to `Country` variable.
+ 1_load_data.R: This code imports the raw data and turns `Area and Country` variable to `Country` variable.
 
                    Input: data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv
 		   
                    Output: data/data_GH.csv
 		   
-2. 2_data_exploration.R: We performed serious of explonatory data analysis including, checking for outliers, collinearity, zero inflation etc (Zuur et al., 2010). Greenhouse gas emission over the years is plotted for each country. Variable `Country` is converted to factors.
+ 2_data_exploration.R: We performed serious of explonatory data analysis including, checking for outliers, collinearity, zero inflation etc (Zuur et al., 2010). Greenhouse gas emission over the years is plotted for each country. Variable `Country` is converted to factors.
                    Input: data/data_GH.csv 
 		   
                    Output: data/clean_data_GH.csv and results/fig/GHG_explore.png
 		   
-3. 3_analyze_data.R: ANOVA and General Linear Hypotheses tests are performed. Summary of ANOVA and letters indicating the differences between the countries are extracted for plotting.
+ 3_analyze_data.R: ANOVA and General Linear Hypotheses tests are performed. Summary of ANOVA and letters indicating the differences between the countries are extracted for plotting.
 
                    Input: data/clean_data_GH.csv
 		   
                    Output: results/summarized_ANOVA.csv results/glht_GH_letters.csv
 		   
-4. 4_plot_results.R: Results are plotted.
+ 4_plot_results.R: Results are plotted.
 
                    Input: data/clean_data_GH.csv results/glht_GH_letters.csv
 		   
                    Output: results/fig/GH_boxplot.png
 		   
-5. 5_plot_estimates.R: Reads the output of the third script, generate a boxplot and save it to results/fig folder.
+ 5_plot_estimates.R: Reads the output of the third script, generate a boxplot and save it to results/fig folder.
 
                    Input: data/clean_data_GH.csv
 		   
