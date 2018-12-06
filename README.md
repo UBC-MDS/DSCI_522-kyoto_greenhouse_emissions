@@ -54,7 +54,9 @@ This project contains five major steps including data cleaning, exploratory data
 ![analysis process chart](data/procedure.png)
 
 ## Usage
-The usage of the make file are:
+
+1. Clone this repository.
+2. Run `Makeme` file on terminal:
 ```
 #'make all' simply tells the make tool to build the target 'all' in the makefile.
 make all
@@ -62,7 +64,57 @@ make all
 make clean
 ```
 
+`Makeme` includes the data analysis pipeline described below:
+
+```
+# script 1: 1_load_data.R 
+# First script loads raw data from the data folder and output clean data int to a csv file.
+data/data_GH.csv : data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv scripts/1_load_data.R
+	Rscript scripts/1_load_data.R data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv data/data_GH.csv
+
+# script 2: 2_data_exploration.R
+# The script reads clean data and creates an exploratory visualization of the green house emission dataset.
+data/clean_data_GH.csv results/fig/GHG_explore.png : data/data_GH.csv scripts/2_data_exploration.R
+	Rscript scripts/2_data_exploration.R data/data_GH.csv data/clean_data_GH.csv results/fig/GHG_explore.png
+
+# script 3: 3_analyze_data.R
+# Third script reads clean data and performs an ANOVA test, then writes these numerical data to file in CSV format. 
+results/summarized_ANOVA.csv results/glht_GH_letters.csv : data/clean_data_GH.csv scripts/3_analyze_data.R
+	Rscript scripts/3_analyze_data.R data/clean_data_GH.csv results/summarized_ANOVA.csv results/glht_GH_letters.csv
+
+# script 4: 4_plot_results.R
+# This script reads the output of the third script, and generate a boxplot and save it to results/fig folder. 
+results/fig/GH_boxplot.png : data/clean_data_GH.csv results/glht_GH_letters.csv scripts/4_plot_results.R
+	Rscript scripts/4_plot_results.R data/clean_data_GH.csv results/glht_GH_letters.csv results/fig/GH_boxplot.png
+
+# script 5: 5_plot_estimates.R
+# This script reads the output of the third script, generate a boxplot and save it to results/fig folder. 
+results/fig/GH_est_plot.png : data/clean_data_GH.csv scripts/5_plot_estimates.R
+	Rscript scripts/5_plot_estimates.R data/clean_data_GH.csv results/fig/GH_est_plot.png
+
+# This command generates a report.md document and a .html document as a report into the /doc folder by reading the .Rmd report
+doc/report.md : doc/report.Rmd data/clean_data_GH.csv results/fig/GHG_explore.png results/fig/GH_boxplot.png results/fig/GH_est_plot.png
+	Rscript -e "rmarkdown::render('doc/report.Rmd')"
+ ```
 The report will be rendered into a markdown file.
+
+Input and output files are explained for each script below. 
+
+1. 1_load_data.R: This code imports the raw data and turns `Area and Country` variable to `Country` variable.
+                   Input: data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv
+                   Output: data/data_GH.csv
+2. 2_data_exploration.R: We performed serious of explonatory data analysis including, checking for outliers, collinearity, zero inflation etc (Zuur et al., 2010). Greenhouse gas emission over the years is plotted for each country. Variable `Country` is converted to factors.
+                   Input: data/data_GH.csv 
+                   Output: data/clean_data_GH.csv and results/fig/GHG_explore.png
+3. 3_analyze_data.R: ANOVA and General Linear Hypotheses tests are performed. Summary of ANOVA and letters indicating the differences between the countries are extracted for plotting.
+                   Input: data/clean_data_GH.csv
+                   Output: results/summarized_ANOVA.csv results/glht_GH_letters.csv
+4. 4_plot_results.R: Results are plotted.
+                   Input: data/clean_data_GH.csv results/glht_GH_letters.csv
+                   Output: results/fig/GH_boxplot.png
+5. 5_plot_estimates.R: Reads the output of the third script, generate a boxplot and save it to results/fig folder.
+                   Input: data/clean_data_GH.csv
+                   Output: results/fig/GH_est_plot.png
 
 ## Dependencies
 
