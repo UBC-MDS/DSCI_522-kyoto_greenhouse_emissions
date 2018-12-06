@@ -4,7 +4,7 @@
 # Description: This file create an automatic data analysis pipeline through our Makefile.
 
 # Usage:
-#   To build the docker image: docker build --dsci_522_greenhouse_emissions_comparisons:0.1 .
+#   To build the docker image: docker build --tag dsci_522_greenhouse_emissions_comparisons:0.1 .
 #   To create the report: docker run --rm -v PASSWORD=test -v PATH_ON_YOUR_COMPUTER: /home/dsci_522_greenhouse_emissions_comparisons chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/dsci_522_greenhouse_emissions_comparisons' all
 #		To get a clean start: docker run --rm -v PASSWORD=test -v PATH_ON_YOUR_COMPUTER: /home/dsci_522_greenhouse_emissions_comparisons chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/dsci_522_greenhouse_emissions_comparisons' clean
 
