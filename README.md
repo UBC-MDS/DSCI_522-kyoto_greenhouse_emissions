@@ -129,6 +129,10 @@ Input and output files are explained for each script below.
 		   
                    Output: results/fig/GH_est_plot.png
 
+## Dependency Diagram
+
+This denpendency diagram shows the workflow of our repo.
+![dependency diagram](Makefile.png)
 ## Dependencies
 
 RStudio version 3.5.1  

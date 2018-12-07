@@ -1,0 +1,36 @@
+digraph G {
+n2[label="all", color="red"];
+n5[label="data/clean_data_GH.csv", color="green"];
+n6[label="data/data_GH.csv", color="green"];
+n7[label="data/raw/2018-11-14_DSCI_522_project_UN-data_GH.csv", color="green"];
+n4[label="doc/report.Rmd", color="green"];
+n3[label="doc/report.md", color="green"];
+n10[label="results/fig/GHG_explore.png", color="green"];
+n11[label="results/fig/GH_boxplot.png", color="green"];
+n15[label="results/fig/GH_est_plot.png", color="green"];
+n12[label="results/glht_GH_letters.csv", color="green"];
+n8[label="scripts/1_load_data.R", color="green"];
+n9[label="scripts/2_data_exploration.R", color="green"];
+n13[label="scripts/3_analyze_data.R", color="green"];
+n14[label="scripts/4_plot_results.R", color="green"];
+n16[label="scripts/5_plot_estimates.R", color="green"];
+n3 -> n2 ; 
+n6 -> n5 ; 
+n9 -> n5 ; 
+n7 -> n6 ; 
+n8 -> n6 ; 
+n5 -> n3 ; 
+n4 -> n3 ; 
+n10 -> n3 ; 
+n11 -> n3 ; 
+n15 -> n3 ; 
+n6 -> n10 ; 
+n9 -> n10 ; 
+n5 -> n11 ; 
+n12 -> n11 ; 
+n14 -> n11 ; 
+n5 -> n15 ; 
+n16 -> n15 ; 
+n5 -> n12 ; 
+n13 -> n12 ; 
+}
