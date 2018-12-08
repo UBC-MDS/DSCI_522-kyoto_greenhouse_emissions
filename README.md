@@ -129,6 +129,16 @@ Input and output files are explained for each script below.
 		   
                    Output: results/fig/GH_est_plot.png
 
+### Docker
+1. Install Docker from [this website](https://www.docker.com/get-started)
+2. Clone the repository
+3. Navigate to the root of this repository on your computer from terminal
+4. Run the analysis on terminal using following code:
+```
+docker run --rm -e PASSWORD=test -v <YOUR_PATH>/dsci_522_greenhouse_emissions_comparisons/:/home/milestone3 chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/milestone3' all
+```
+
+
 ## Dependency Diagram
 
 This denpendency diagram shows the workflow of our repo.
