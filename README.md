@@ -135,7 +135,7 @@ Input and output files are explained for each script below.
 3. Navigate to the root of this repository on your computer from terminal
 4. Run the analysis on terminal using following code:
 ```
-docker run --rm -e PASSWORD=test -v <YOUR_PATH>/dsci_522_greenhouse_emissions_comparisons/:/home/milestone3 chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/milestone3' all
+docker run --rm -e PASSWORD="test" -v <YOUR_PATH>/DSCI_522-kyoto_greenhouse_emission:/home/rstudio/DSCI_522-kyoto_greenhouse_gas_emission  chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/rstudio/DSCI_522-kyoto_greenhouse_emission' all
 ```
 
 
