@@ -55,6 +55,40 @@ This project contains five major steps including data cleaning, exploratory data
 
 ## Usage
 
+### Docker
+1. Install Docker from [this website](https://www.docker.com/get-started)
+2. Pull image from docker
+
+```
+docker pull chaomander2018/dsci_522_greenhouse_emissions_comparisons
+```
+
+3. Navigate into the container
+
+For MAC:
+```
+docker run --rm -it -e PASSWORD=test -v <ABSOLUTE PATH OF REPO>:/home/milestone3 chaomander2018/dsci_522_greenhouse_emissions_comparisons /bin/bash
+```
+
+For Windows:
+```
+docker run --rm -it -e PASSWORD=test -v <ABSOLUTE PATH OF REPO>:/home/milestone3 chaomander2018/dsci_522_greenhouse_emissions_comparisons //bin/bash
+```
+
+4. Create the report
+
+```
+docker run --rm -e PASSWORD=test -v <ABSOLUTE PATH OF REPO>:/home/milestone3 chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/milestone3' all
+```
+
+5. Clean start
+
+```
+docker run --rm -e PASSWORD=test -v <ABSOLUTE PATH OF REPO>:/home/milestone3 chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/milestone3' clean
+```
+
+### Without Docker
+
 1. Clone this repository.
 2. Run `Makeme` file on terminal:
 ```
@@ -128,16 +162,6 @@ Input and output files are explained for each script below.
                    Input: data/clean_data_GH.csv
 		   
                    Output: results/fig/GH_est_plot.png
-
-### Docker
-1. Install Docker from [this website](https://www.docker.com/get-started)
-2. Clone the repository
-3. Navigate to the root of this repository on your computer from terminal
-4. Run the analysis on terminal using following code:
-```
-docker run --rm -e PASSWORD="test" -v <YOUR_PATH>/DSCI_522-kyoto_greenhouse_emission:/home/rstudio/DSCI_522-kyoto_greenhouse_gas_emission  chaomander2018/dsci_522_greenhouse_emissions_comparisons make -C '/home/rstudio/DSCI_522-kyoto_greenhouse_emission' all
-```
-
 
 ## Dependency Diagram
 
